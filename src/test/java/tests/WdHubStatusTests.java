@@ -11,6 +11,7 @@ public class WdHubStatusTests extends TestBase {
         given()
                 .log().all()
                 .auth().basic("user1", "1234")
+                .when()
                 .get("/wd/hub/status")
                 .then()
                 .log().all()
