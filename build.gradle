@@ -9,7 +9,9 @@ repositories {
 
 dependencies {
     testImplementation(
-            "org.junit.jupiter:junit-jupiter:5.14.3"
+            "org.junit.jupiter:junit-jupiter:5.14.3",
+            "io.rest-assured:rest-assured:6.0.0",
+            "io.rest-assured:json-schema-validator:6.0.0"
             )
 }
 
@@ -25,6 +27,6 @@ tasks.withType(Test) {
     }
 }
 
-test {
-    useJUnitPlatform()
-}
+//test {
+//    useJUnitPlatform()
+//}
